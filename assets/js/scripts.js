@@ -173,7 +173,7 @@
         singleItem: true,
         navigation: true,
         pagination: false,
-        navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        navigationText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
 
     });
 
@@ -187,7 +187,7 @@
         singleItem: true,
         pagination: false,
         afterAction: syncPosition,
-        navigationText: ['<i class="fa fa-long-arrow-left"></i>', '<i class="fa fa-long-arrow-right"></i>']
+        navigationText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
 
     });
 

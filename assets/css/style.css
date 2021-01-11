@@ -4,8 +4,8 @@ body {
   font-size: 14px;
   line-height: 23px;
   font-weight: 400;
-  color: #4b565b;
-  word-spacing: 3px;
+  color: #071e3d;
+  /* word-spacing: 3px; */
 }
 
 sub,
@@ -1288,7 +1288,6 @@ img {
 .form-control {
   font-size: 14px;
   border-radius: 1px;
-  margin-bottom: 20px;
   border-color: #ced4d7;
   padding: 8px 12px;
   height: auto;
@@ -1815,12 +1814,21 @@ ul.styled-list.list-star li:before {
 
 .mg-page-title {
   padding-top: 70px;
-  padding-bottom: 50px;
-  background-image: url(../images/page-title.png);
+  padding-bottom: 36px;
+  background-image: url(../images/slide-2.png);
   color: #fff;
   text-align: center;
+  position: relative;
+} 
+.mg-page-title::before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  background-color: #000000bf;
 }
-
 .mg-page-title .mg-page {
   background-color: transparent;
 }
@@ -1832,7 +1840,8 @@ ul.styled-list.list-star li:before {
   position: relative;
   margin-bottom: 35px;
   margin-top: 0;
-  font-size: 45px;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .mg-page-title h2:after {
@@ -1847,7 +1856,7 @@ ul.styled-list.list-star li:before {
 }
 
 .header.transp + .mg-page-title {
-  padding-top: 167px;
+  padding-top: 107px;
 }
 
 .header.transp.center-content + .mg-page-title {
@@ -2623,8 +2632,7 @@ div.cs-skin-elastic .cs-options .cs-selected span::after {
 }
 
 .mg-room figcaption .mg-room-fecilities ul li {
-  color: #fff;
-  padding-bottom: 8px;
+  color: #0a0a0a;
   font-size: 17px;
 }
 
@@ -3150,12 +3158,12 @@ div.cs-skin-elastic .cs-options .cs-selected span::after {
 }
 
 .mg-gallery .owl-controls .owl-buttons div {
-  background-color: rgba(255, 255, 255, 0.4) !important;
+  background-color: rgb(0 0 0 / 65%) !important;
   padding: 13px 15px;
   border-radius: 25px;
   margin-top: -25px;
   opacity: 0;
-  color: #071e3d;
+  color: #fdfdfd;
   -webkit-transition: opacity 0.3s, background-color 0.3s, color 0.3s !important;
   transition: opacity 0.3s, background-color 0.3s, color 0.3s !important;
 }
@@ -4071,15 +4079,15 @@ div.cs-skin-elastic .cs-options .cs-selected span::after {
 }
 
 .mg-book-form-input {
-  min-height: 100px;
+
 }
 
 .mg-book-form-input label {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   color: #071e3d;
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 13px;
+  margin-bottom: 3px;
 }
 
 .mg-book-form-personal,
@@ -4191,6 +4199,7 @@ div.cs-skin-elastic .cs-options .cs-selected span::after {
   font-size: 18px;
   line-height: 28px;
   padding-bottom: 5px;
+  white-space: nowrap;
 }
 
 .mg-available-rooms .mg-avl-room-title {
@@ -4202,24 +4211,16 @@ div.cs-skin-elastic .cs-options .cs-selected span::after {
 
 .mg-available-rooms .mg-avl-room-title a {
   color: #071e3d;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .mg-available-rooms .mg-avl-room-title span {
   font-family: "Open Sans";
   font-weight: 300;
-  color: #e7b315;
+  color: #071e3d;
   float: right;
-  /* 			position: relative;
-  
-  &:after{
-      content: '';
-      width: 100%;
-      height: 3px;
-      background-color: @mcolor;
-      position: absolute;
-      bottom: -12px;
-      right: 0;
-  } */
+  font-weight: 500;
 }
 
 .mg-paid .mg-widget {
@@ -4265,8 +4266,30 @@ div.cs-skin-elastic .cs-options .cs-selected span::after {
   border-color: #eaedee;
   background-color: #fff;
   padding: 0;
+  
 }
-
+.accordion .card .card-header .panel-title {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #071e3d;
+  margin-bottom: 0px;
+}
+.accordion .card {
+  margin-bottom: 10px !important;
+  border-color: #071e3d !important;
+}
+.accordion .card .collapse.show {
+  border-bottom: 1px solid #071e3d;
+}
+.accordion .card .card-header{
+  margin-bottom: 0px !important;
+}
+.accordion .card .card-header a.collapsed {
+  color: #ffffff;
+}
+.accordion .card .card-header a {
+  padding: 16px 15px;
+}
 .card .card-header a {
   display: block;
   padding: 10px 15px;
@@ -5323,5 +5346,118 @@ div.cs-skin-elastic .cs-options .cs-selected span::after {
 @media (max-width: 400px) {
   .navbar-brand img {
     height: 40px;
+  }
+}
+
+
+
+.search-room-dark .mg-book-now .mg-bn-forms .input-group-addon {
+  color:#071e3d;
+  border-color: #071e3d;
+}
+
+.search-room-dark .mg-book-now .mg-bn-forms .form-control {
+  border-color: #071e3d;
+  color: #071e3d;
+}
+.search-room-dark .mg-book-now .mg-bn-forms .form-control::placeholder{
+  color: #071e3d;
+}
+.search-room-dark div.cs-skin-elastic > span {
+  border: 1px solid #071e3d;
+  color: #071e3d;
+}
+.search-room-dark .mg-book-now .cs-active > .cs-placeholder {
+  color: #071e3d;
+}
+.input-number {
+  width: 44px !important;
+}
+.small, small {
+  font-size: 75%;
+}
+.search-room-dark .mg-book-now .focus .form-control {
+  color: #071e3d !important;
+}
+.mg-room-fecilities ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mg-room-fecilities ul li {
+  font-size: 12px !important;
+  padding: 5px 14px;
+  background-color: #ececec;
+  line-height: 24px !important;
+  border-radius: 30px;
+  margin-right: 7px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.mg-available-rooms .nav-tabs .nav-link {
+  font-weight: 600;
+  font-size: 14px;
+}
+.inclusions-icon {
+  color: #071e3d;
+}
+
+.rate-plan {
+  border-bottom: 2px dotted #d9d9d9!important;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.rate-plan:last-child {
+  border-bottom: 0px !important;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.amenities-ul li {
+  position: relative;
+  padding-left: 23px !important;
+}
+.amenities-ul li::before {
+  content: "\f00c";
+  position: absolute;
+  font-family: Font Awesome\ 5 Free;
+  font-weight: 600;
+  left: 0px;
+  font-size: 11px;
+  color: #071e3d;
+}
+.payment-option-block span {
+  font-size: 12px;
+}
+.payment-option-block label {
+  font-size: 13px;
+}
+.or{
+  display: flex;
+  align-items: center;
+}
+.or::before, .or::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed #333;
+}
+.or span {
+  min-width: 35px;
+  display: block;
+  font-size: 15px;
+}
+.mg-cart-total td {
+  padding: 8px;
+  font-size: 13px;
+  color: white;
+  line-height: 25px;
+  border: 1px solid #ffffff0d;
+}
+.grad-total-row td {
+  color: #e7b315;
+}
+@media(max-width:992px){
+  .booking-detail{
+    order: -1;
   }
 }
