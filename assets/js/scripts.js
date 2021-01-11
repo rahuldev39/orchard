@@ -180,8 +180,8 @@
     /*
      * Owl Carousel for Gallery
      */
-    var sync1 = $("#mg-gallery");
-    var sync2 = $("#mg-gallery-thumb");
+    var sync1 = $(".mg-gallery");
+    var sync2 = $(".mg-gallery-thumb");
     sync1.owlCarousel({
         navigation: true,
         singleItem: true,
