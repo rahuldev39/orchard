@@ -358,27 +358,7 @@
         effect: 'fadeScale'
     });
 
-    /*
-     * Google map for contact form
-     */
-    if ($('#mg-map').length) {
-
-        var map = new GMaps({
-            el: '#mg-map',
-            lat: -37.81792,
-            lng: 144.96506,
-            zoom: 17
-        });
-
-        map.addMarker({
-            lat: -37.81792,
-            lng: 144.96506,
-            title: 'Map',
-            infoWindow: {
-                content: '<strong>Envato</strong><br>Level 13, 2 Elizabeth St, Melbourne<br>Victoria 3000 Australia'
-            }
-        });
-    }
+    
 })(jQuery);
 
 window.addEventListener('load', function() {
