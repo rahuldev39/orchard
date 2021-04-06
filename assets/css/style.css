@@ -5470,8 +5470,8 @@ div.cs-skin-elastic .cs-options .cs-selected span::after {
 .h-40{
   height: 40px;
 }
-.restaurant-image:hover a{
-    cursor: url(../images/zoom.svg), default !important;
+.restaurant-image:hover img{
+    cursor:zoom-in;
 }
 .restaurant-image:hover img{
   opacity: .7;
@@ -5480,4 +5480,10 @@ div.cs-skin-elastic .cs-options .cs-selected span::after {
   .right-img{
     order: -1;
   }
+}
+.restaurant-slider div{
+  height: 100%;
+}
+.restaurant-slider .owl-controls{
+  height: auto;
 }

@@ -180,6 +180,19 @@
     /*
      * Owl Carousel for Gallery
      */
+
+    $(".restaurant-gallery").owlCarousel({
+        navigation: true,
+        singleItem: true,
+        pagination: false,
+        autoPlay:true,
+        stopOnHover : false,
+        slideSpeed : 200,
+        paginationSpeed : 500,
+        rewindSpeed : 1000,
+        navigationText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+
+    });
     var sync1 = $(".mg-gallery");
     var sync2 = $(".mg-gallery-thumb");
     sync1.owlCarousel({
@@ -187,6 +200,7 @@
         singleItem: true,
         pagination: false,
         afterAction: syncPosition,
+        autoplay:true,
         navigationText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
 
     });
